@@ -1,0 +1,110 @@
+Case 1 - Fixed
+
+Arguments 
+min_number_of_orders = 3
+max_number_of_orders = 10
+offer_amount = 1200
+productId=5 (2000)
+type
+
+Create group order first
+
+Create 3 orders,
+
+Then from the next orders onwards, the order netTotal must update (if floating type)
+
+If the order count reaches 10, the wallet will be update
+
+
+Result:
+
+Group order creation
+
+
+ {
+    "id": 3,
+    "min_no_of_orders": 3,
+    "max_no_of_orders": 5,
+    "selling_price": 1200,
+    "offer_type": 2,
+    "start_Date": "2022-12-27T05:49:55.773Z",
+    "end_Date": "2022-12-28T05:49:55.774Z",
+    "isExpired": null,
+    "businessId": 2,
+    "createdAt": "2022-12-27T05:51:33.898Z",
+    "updatedAt": "2022-12-27T05:51:33.898Z"
+  }-+
+
+API request- response
+
+#1
+{
+  "productId": 10,
+  "quantity": 1
+}
+
+ {
+    "id": 119,
+    "referenceNumber": " QW1672210464463",
+    "cancellationReason": null,
+    "productName": " qwerw",
+    "thumbnail": "http://localhost:3000/images\\download-0554.jpeg",
+    "price": "₹1000 ",
+    "status": 1,
+    "quantity": 1,
+    "product_code": "rewtew",
+    "paymentMode": 1,
+    "tax": "₹20 ",
+    "offer": 200,
+    "netTotal": "₹710 ",
+    "deliveryCharge": 10,
+    "expected_delivery_date": null,
+    "tracking_link": null,
+    "productId": 10,
+    "courier_agency": null,
+    "userId": 6,
+    "businessId": 2,
+    "groupOrderId": 3,
+    "createdAt": "2022-12-28T06:54:24.463Z",
+    "updatedAt": "2022-12-28T06:54:30.374Z"
+  }
+
+
+
+#2 First orders
+{
+  "productId": 10,
+  "quantity": 4
+}
+
+  {
+    "id": 120,
+    "referenceNumber": " QW1672210657185",
+    "cancellationReason": null,
+    "productName": " qwerw",
+    "thumbnail": "http://localhost:3000/images\\download-0554.jpeg",
+    "price": "₹1000 ",
+    "status": 1,
+    "quantity": 4,
+    "product_code": "rewtew",
+    "paymentMode": 1,
+    "tax": "₹80 ",
+    "offer": 800,
+    "netTotal": "₹1200 ",
+    "deliveryCharge": 10,
+    "expected_delivery_date": null,
+    "tracking_link": null,
+    "productId": 10,
+    "courier_agency": null,
+    "userId": 6,
+    "businessId": 2,
+    "groupOrderId": 3,
+    "createdAt": "2022-12-28T06:57:37.185Z",
+    "updatedAt": "2022-12-28T06:57:53.012Z"
+  }
+
+#3 order 2
+
+
+
+

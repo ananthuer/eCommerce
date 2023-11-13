@@ -1,0 +1,92 @@
+#Initial user's profile
+{
+  "id": 6,
+  "firstName": "custome",
+  "lastName": "3",
+  "email": "a@gmail.com",
+  "available_balance": 500,
+  "phone": "8547158035",
+  "password": "$2b$10$rGAVOtoQhLRmqynaoAk8kec84Hj.6G79hyv9EELyRcXkjjPI2cNwa",
+  "isActive": true,
+  "roles": "3",
+  "createdAt": "2022-10-17T09:57:27.059Z",
+  "updatedAt": "2022-12-28T05:37:47.946Z",
+  "cartId": null
+}
+
+
+
+#Cart checkout
+req- 
+{
+  "billingAddress": 1,
+  "wallet_debit": 100,
+  "shippingAddress": 1,
+  "pay_online_products": [
+    124
+  ],
+  "cod_products": [
+    0
+  ]
+}
+
+res- 
+{
+  "onlineTotalAmount": 900,
+  "orderId": "order_KxEpPgUFLkDNdF",
+  "key": "rzp_test_9BHpD0vLTiDrgG",
+  "amount": 900
+}
+
+#cart payment Result
+req- 
+{
+  "razorPayOrderId": "order_KxEdi5LPXbKDXE",
+  "signature": "string",
+  "paymentId": 1
+}
+
+res- 
+  {
+    "id": 119,
+    "referenceNumber": " QW1672210464463",
+    "cancellationReason": null,
+    "productName": " qwerw",
+    "thumbnail": "http://localhost:3000/images\\download-0554.jpeg",
+    "price": "₹1000 ",
+    "status": 1,
+    "quantity": 1,
+    "product_code": "rewtew",
+    "paymentMode": 1,
+    "tax": "₹20 ",
+    "offer": 200,
+    "netTotal": "₹710 ",
+    "deliveryCharge": 10,
+    "expected_delivery_date": null,
+    "tracking_link": null,
+    "productId": 10,
+    "courier_agency": null,
+    "userId": 6,
+    "businessId": 2,
+    "groupOrderId": 3,
+    "createdAt": "2022-12-28T06:54:24.463Z",
+    "updatedAt": "2022-12-28T06:54:30.374Z"
+  }
+
+#user's profile
+
+
+{
+  "id": 6,
+  "firstName": "custome",
+  "lastName": "3",
+  "email": "a@gmail.com",
+  "available_balance": 400,
+  "phone": "8547158035",
+  "password": "$2b$10$rGAVOtoQhLRmqynaoAk8kec84Hj.6G79hyv9EELyRcXkjjPI2cNwa",
+  "isActive": true,
+  "roles": "3",
+  "createdAt": "2022-10-17T09:57:27.059Z",
+  "updatedAt": "2022-12-28T06:54:24.431Z",
+  "cartId": null
+}

@@ -1,0 +1,172 @@
+Case 1 - floating
+
+Arguments 
+min_number_of_orders = 3
+max_number_of_orders = 6
+offer_amount = 1200
+productId=5 (2000)
+type
+
+Create group order first
+
+Create 3 orders,
+
+Then from the next orders onwards, the order netTotal must update (if floating type)
+
+If the order count reaches 10, the wallet will be update
+
+
+Result:
+
+Group order creation
+
+
+{
+    "id": 1,
+    "min_no_of_orders": 3,
+    "max_no_of_orders": 6,
+    "selling_price": 1200,
+    "offer_type": 1,
+    "start_Date": "2022-12-13T09:02:34.187Z",
+    "end_Date": "2022-15-13T09:02:34.187Z",
+    "isExpired": true,
+    "businessId": 2,
+    "createdAt": "2022-12-13T08:59:56.148Z",
+    "updatedAt": "2022-12-28T05:37:47.961Z"
+  }
+
+API request- response
+
+#1
+{
+  "productId": 11,
+  "quantity": 1
+}
+
+ {
+    "id": 122,
+    "referenceNumber": " QW1672211394608",
+    "cancellationReason": null,
+    "productName": " qwerw",
+    "thumbnail": "http://localhost:3000/http://localhost:3000/null",
+    "price": "₹2000 ",
+    "status": 1,
+    "quantity": 1,
+    "product_code": "rewte33w",
+    "paymentMode": 1,
+    "tax": "₹40 ",
+    "offer": 400,
+    "netTotal": "₹1610 ",
+    "deliveryCharge": 10,
+    "expected_delivery_date": null,
+    "tracking_link": null,
+    "productId": 11,
+    "courier_agency": null,
+    "userId": 6,
+    "businessId": 1,
+    "groupOrderId": 2,
+    "createdAt": "2022-12-28T07:09:54.608Z",
+    "updatedAt": "2022-12-28T07:09:54.958Z"
+  }
+
+
+
+#2 First orders
+{
+  "productId": 11,
+  "quantity": 3
+}
+
+  {
+    "id": 123,
+    "referenceNumber": " QW1672211791512",
+    "cancellationReason": null,
+    "productName": " qwerw",
+    "thumbnail": "http://localhost:3000/http://localhost:3000/null",
+    "price": "₹2000 ",
+    "status": 1,
+    "quantity": 3,
+    "product_code": "rewte33w",
+    "paymentMode": 1,
+    "tax": "₹120 ",
+    "offer": 1200.0000000000002,
+    "netTotal": "₹1700 ",
+    "deliveryCharge": 10,
+    "expected_delivery_date": null,
+    "tracking_link": null,
+    "productId": 11,
+    "courier_agency": null,
+    "userId": 6,
+    "businessId": 1,
+    "groupOrderId": 2,
+    "createdAt": "2022-12-28T07:16:31.512Z",
+    "updatedAt": "2022-12-28T07:16:31.951Z"
+  }
+
+#3 order 2
+
+{
+  "productId": 11,
+  "quantity": 3
+}
+
+
+{
+    "id": 124,
+    "referenceNumber": " QW1672211954075",
+    "cancellationReason": null,
+    "productName": " qwerw",
+    "thumbnail": "http://localhost:3000/http://localhost:3000/null",
+    "price": "₹2000 ",
+    "status": 1,
+    "quantity": 2,
+    "product_code": "rewte33w",
+    "paymentMode": 1,
+    "tax": "₹80 ",
+    "offer": 800,
+    "netTotal": "₹3210 ",
+    "deliveryCharge": 10,
+    "expected_delivery_date": null,
+    "tracking_link": null,
+    "productId": 11,
+    "courier_agency": null,
+    "userId": 6,
+    "businessId": 1,
+    "groupOrderId": null,
+    "createdAt": "2022-12-28T07:19:14.075Z",
+    "updatedAt": "2022-12-28T07:19:14.075Z"
+  }
+
+
+#4
+
+{
+  "productId": 11,
+  "quantity": 1
+}
+
+{
+    "id": 125,
+    "referenceNumber": " QW1672212051480",
+    "cancellationReason": null,
+    "productName": " qwerw",
+    "thumbnail": "http://localhost:3000/http://localhost:3000/null",
+    "price": "₹2000 ",
+    "status": 1,
+    "quantity": 1,
+    "product_code": "rewte33w",
+    "paymentMode": 1,
+    "tax": "₹40 ",
+    "offer": 400,
+    "netTotal": "₹1610 ",
+    "deliveryCharge": 10,
+    "expected_delivery_date": null,
+    "tracking_link": null,
+    "productId": 11,
+    "courier_agency": null,
+    "userId": 6,
+    "businessId": 1,
+    "groupOrderId": null,
+    "createdAt": "2022-12-28T07:20:51.480Z",
+    "updatedAt": "2022-12-28T07:20:51.480Z"
+  }
